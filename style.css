@@ -124,12 +124,6 @@ table {
     height: 15vh;
     
 }
-.info:nth-last-child(-n+3){
-    border-left: 1px solid rgba(128, 128, 128, 0.354);
-    height: 50%;
-    padding-left: 40px;
-}
-
 
 .infoTitle{
     font-weight: 500;
@@ -139,4 +133,41 @@ table {
 .infoAdress{
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+@media (max-Width:1400px) {
+    .top{
+        background-image: url("./src/pattern-bg-mobile.png");
+    }
+    #inputSearch{
+        width: 70vw;
+    }
+    .infoLocation{
+        flex-direction: column;
+        height: 28dvh;
+    }
+    .info{
+        align-items: center;
+        height: 30px;
+        gap: 10px;
+    }
+    .infoTitle, .infoSection span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        width: 80vw
+    }
+    .infoSection span{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 1401px) {
+
+.info:nth-last-child(-n+3){
+    border-left: 1px solid rgba(128, 128, 128, 0.354);
+    height: 50%;
+    padding-left: 40px;
+}
+
 }
