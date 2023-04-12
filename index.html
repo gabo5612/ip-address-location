@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <title>IP Address Tracker</title>
+</head>
+<body>
+    <div class="content">
+    <div class="top">
+        <div class="title">
+            <h1>IP Address Tracker</h1>
+        </div>
+        <div class="searchBar">
+            <input type="search" title="Search for any IP address or domain" placeholder="Search for any IP address or domain" id="inputSearch">  
+            
+            <button id="searchButton"><img src="./src/icon-arrow.svg" alt="search" ></button>
+        </div>
+        <div class="infoLocation">
+            <div class="info">
+                <div class="infoTitle">
+                    <h4>IP ADDRESS</h4>
+                </div>
+                <div class="infoSection">
+                    <span class="infoAdress" id="ip">-</span>
+                </div>
+            </div>
+            <div class="info">
+                <div class="infoTitle">
+                    <h4>LOCATION</h4>
+                </div>
+                <div class="infoSection">
+                    <span class="infoAdress" id="location">-</span>
+                </div>
+            </div>
+            <div class="info">
+                <div class="infoTitle">
+                    <h4>TIMEZONE</h4>
+                </div>
+                <div class="infoSection">
+                    <span class="infoAdress" id="timeZone">-</span>
+                </div>
+            </div>
+            <div class="info">
+                <div class="infoTitle">
+                    <h4>IPS</h4>
+                </div>
+                <div class="infoSection">
+                    <span class="infoAdress" id="isp">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="botton" id="map"></div>
+</div>
+     <script src="main.js"></script>
+</body>
+</html>

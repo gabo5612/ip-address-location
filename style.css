@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Rubik', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+.content{
+    height: 100dvh;
+    width: 100dvw;
+}
+#map{
+    height: 75dvh;
+    width: 100dvw;
+}
+.top{
+    background-image: url("./src/pattern-bg-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+}
+.botton{
+    z-index: 1;
+}
+.title{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: 1.6rem;
+  
+    margin: 25px 0px;
+}
+#inputSearch{
+    width: 20dvw;
+    height: 40px;
+    padding: 10px 25px;
+    border-radius: 12px 0 0 12px;
+    border: none;
+    outline: none;
+    
+}
+
+#searchButton{
+    background-color: var(--VeryDarkGray);
+    height: 40px;
+    border:none;
+    padding-right: 15px;
+    margin-left: -2px;
+    border-radius: 0 12px 12px 0;
+    
+}
+#searchButton img{
+    height: 10px;
+    margin-left: 7px;
+}
+.infoLocation{
+    height: 15dvh;
+    width: 70dvw;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 135px;
+    margin-top: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 10vw;
+    height: 15vh;
+    
+}
+.info:nth-last-child(-n+3){
+    border-left: 1px solid rgba(128, 128, 128, 0.354);
+    height: 50%;
+    padding-left: 40px;
+}
+
+
+.infoTitle{
+    font-weight: 500;
+    color: var(--DarkGray);
+    font-size: 0.8rem;
+}
+.infoAdress{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
