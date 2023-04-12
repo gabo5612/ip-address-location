@@ -43,8 +43,7 @@ function getLocation(inputValue){
     const apiKey = 'at_xLxFaCi9GE4nNvAGY3UQLuvyHXOhx';
     const ipAddress = inputValue;
     const apiUrl = `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ipAddress}`;
-    console.log(apiUrl);
-    console.log(typeof(apiUrl));
+    
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
@@ -57,7 +56,7 @@ function getLocation(inputValue){
         isp.innerText=data.isp
         const lat=data.location.lat
         const lng=data.location.lng
-        map.setView([lat, lng], 11)
+        map.setView([lat, lng], 15)
         var circle = L.circle([lat, lng], {
             color: 'green',
             fillColor: '#f03',
@@ -65,7 +64,7 @@ function getLocation(inputValue){
             radius: 500
         }).addTo(map);
         var marker = L.marker([lat, lng]).addTo(map);
-        console.log(data)
+      
       })
       .catch(error => {
         console.error('Error al obtener los datos de la API', error);
